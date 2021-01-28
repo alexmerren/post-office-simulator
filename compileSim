@@ -1,0 +1,4 @@
+#!/bin/zsh
+gcc -ansi -c src/sim.c -o out/sim.o 
+gcc out/sim.o -o out/simQ  
+echo "Compiled Successfully!"
