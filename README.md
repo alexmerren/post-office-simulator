@@ -4,7 +4,7 @@ This application was written as a solution to the coursework for the ECM2433 mod
 
 ## Contents
 
- - [Compilation](#Compilation)]
+ - [Compilation](#Compilation)
  - [Functionality](#Functionality)
  - [Output](#Output)
 

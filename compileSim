@@ -5,3 +5,4 @@ gcc -ansi -I./src -c ./src/service.c -o ./out/service.o && \
 gcc -ansi -I./src -c ./src/simQ.c -o ./out/simQ.o && \
 gcc out/simQ.o out/customer.o out/service.o -o out/simQ && \
 echo "Compiled Successfully!"
+
