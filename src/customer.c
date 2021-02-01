@@ -1,47 +1,52 @@
 #include "customer.h"
 
 // Function Definitions
-static CUSTOMER *newCustomer ()
+static CUSTOMER *newCustomer (unsigned int tolerance)
 {
     CUSTOMER *newCustomer;
     if (( newCustomer = (CUSTOMER *)malloc(sizeof(CUSTOMER))) == NULL)
     {
-        printf("Not enough memory!\n");
+        printf("Not enough memory when creating customer\n");
         exit(-1);
     }
-    newCustomer->nextCustomer = NULL;
     strcpy(newCustomer->status, "Waiting");
+    newCustomer->tolerance = tolerance;
+    newCustomer->nextCustomer = NULL;
     return newCustomer;
 }
 
-extern void push (CUSTOMER **head)
+extern void push (CUSTOMER **queue, unsigned int tolerance)
 {
-    CUSTOMER *temp = newCustomer();
-    temp->nextCustomer = *head;
-    *head = temp;
+    CUSTOMER *currentCustomer = *queue;
+    CUSTOMER *nextCustomer = newCustomer(tolerance);
+    if (*queue == NULL)
+    {
+        *queue = nextCustomer;
+        return;
+    }
+    while (currentCustomer->nextCustomer != NULL)
+    {
+        currentCustomer = currentCustomer->nextCustomer;
+    }
+    currentCustomer->nextCustomer = nextCustomer;
 }
 
-extern void pop (CUSTOMER **head)
+extern void pop (CUSTOMER **queue)
 {
-    CUSTOMER *tempPtr = *head;
+    CUSTOMER *tempPtr = *queue;
     if (tempPtr != NULL)
     {
-        head = &tempPtr->nextCustomer;
+        *queue = tempPtr->nextCustomer;
         free(tempPtr);
     }
 }
 
-extern void printQueue (CUSTOMER *head)
+extern void printQueue (CUSTOMER *queue)
 {
-    while(head != NULL)
+    CUSTOMER* currentCustomer = queue;
+    while (currentCustomer != NULL)
     {
-        printf("Customer is %s\n", head->status);
-        head = head->nextCustomer;
+        printf("Customer has tolerance: %u\n", currentCustomer->tolerance);
+        currentCustomer = currentCustomer->nextCustomer;
     }
-}
-
-extern void emptyQueue (CUSTOMER **root)
-{
-
-
 }

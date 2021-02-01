@@ -1,6 +1,6 @@
 #include "simQ.h"
 
-void readInputFile(char *inputFileName)
+void readInputFile (char *inputFileName)
 {
     FILE *inputFile;
     if ((inputFile = fopen(inputFileName, "r")) == NULL)
@@ -12,7 +12,7 @@ void readInputFile(char *inputFileName)
     fclose(inputFile);
 }
 
-void checkParameters(int amountOfArgs)
+void checkParameters (int amountOfArgs)
 {
     if (amountOfArgs < 3) 
     {
@@ -21,14 +21,15 @@ void checkParameters(int amountOfArgs)
     }
 }
 
+// Main Method
 int main(int argc, char **argv)
 {
-
-    CUSTOMER *root = NULL;
-    push(&root);
-    push(&root);
-    push(&root);
-    push(&root);
-    printQueue(root);
+    CUSTOMER *queue = NULL;
+    push(&queue, 1);
+    push(&queue, 2);
+    printQueue(queue);
+    pop(&queue);
+    pop(&queue);
+    printQueue(queue);
 	return 0;
 }

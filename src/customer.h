@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
+// Struct Definition
 struct node 
 {
     unsigned int tolerance;
@@ -10,8 +11,8 @@ struct node
 };
 typedef struct node CUSTOMER;
 
-static CUSTOMER *newCustomer ();
-extern void     push        (CUSTOMER**);
-extern void     pop         (CUSTOMER**);
-extern void     printQueue  (CUSTOMER*);
-extern void     emptyQueue  (CUSTOMER**);
+// Function Prototypes
+static CUSTOMER *newCustomer    (unsigned int);
+extern void     push            (CUSTOMER**, unsigned int);
+extern void     pop             (CUSTOMER**);
+extern void     printQueue      (CUSTOMER*);
