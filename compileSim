@@ -1,8 +1,8 @@
-#!/bin/zsh
+#!/bin/sh
 # Script to compile simQ program.
 gcc -ansi -I./src -c ./src/customer.c -o ./out/customer.o && \
 gcc -ansi -I./src -c ./src/service.c -o ./out/service.o && \
 gcc -ansi -I./src -c ./src/simQ.c -o ./out/simQ.o && \
 gcc out/simQ.o out/customer.o out/service.o -o out/simQ && \
-echo "Compiled Successfully!"
+echo "Compiled Successfully!" || echo "There was an error."
 

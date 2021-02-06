@@ -3,7 +3,7 @@
 #include <string.h>
 #include "customer.h"
 
-// Struct Definition
+/* Struct Definition */
 struct servicePoint
 {
     short pointNumber;
@@ -11,6 +11,6 @@ struct servicePoint
 };
 typedef struct servicePoint SERVICE;
 
-// Function Prototypes
+/* Function Prototypes */
 static SERVICE *newServicePoint (short);
 extern void     processCustomer (SERVICE*, CUSTOMER*);

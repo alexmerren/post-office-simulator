@@ -1,13 +1,14 @@
 #include "service.h"
 
-// Function Definitions
+/* Function Definitions */
 SERVICE *newServicePoint (short pointNumber) 
 {
     SERVICE *newServicePoint;
     if (( newServicePoint = (SERVICE *)malloc(sizeof(SERVICE))) == NULL)
     {
-        printf("Not enough memory when creating service point.\n");
-        exit(-1);
+        fprintf(stderr, "Ran out of memory creating service point\n");
+        fflush(stderr);
+        exit(EXIT_FAILURE);
     }
     newServicePoint->pointNumber = pointNumber;
     newServicePoint->currentCustomer = NULL;

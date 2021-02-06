@@ -1,0 +1,9 @@
+# Standard Parameters:
+maxQueueLength      20
+numServicePoints    3
+closingTime         100
+
+# Customer Parameters:
+averageCustomerTolerance    4 
+maxCustomerTolerance        10
+minCustomerTolernace        1

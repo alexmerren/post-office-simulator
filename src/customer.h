@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
-// Struct Definition
+/* Struct Definition */
 struct node 
 {
     unsigned int tolerance;
@@ -11,7 +12,7 @@ struct node
 };
 typedef struct node CUSTOMER;
 
-// Function Prototypes
+/* Function Prototypes */
 static CUSTOMER *newCustomer    (unsigned int);
 extern void     push            (CUSTOMER**, unsigned int);
 extern void     pop             (CUSTOMER**);

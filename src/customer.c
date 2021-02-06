@@ -1,13 +1,14 @@
 #include "customer.h"
 
-// Function Definitions
+/* Function Definitions */
 static CUSTOMER *newCustomer (unsigned int tolerance)
 {
     CUSTOMER *newCustomer;
     if (( newCustomer = (CUSTOMER *)malloc(sizeof(CUSTOMER))) == NULL)
     {
-        printf("Not enough memory when creating customer\n");
-        exit(-1);
+        fprintf(stderr, "Ran out of memory creating customer.\n");
+        fflush(stderr);
+        exit(EXIT_FAILURE);
     }
     strcpy(newCustomer->status, "Waiting");
     newCustomer->tolerance = tolerance;

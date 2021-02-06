@@ -3,6 +3,7 @@
 #include <string.h>
 #include "service.h"
 
-// Function Prototypes
-extern void readInputFile   (char*);
-extern void checkParams     (int);
+/* Function Prototypes */
+extern int  getParamValue       (char*, char[]);
+extern void createOutputFile    (char*);
+extern void checkParams         (int);
