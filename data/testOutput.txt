@@ -1,0 +1,47 @@
+# Output file:
+minWaitingTime: 0, maxWaitingTime: 9
+minProcessTime: 3, maxProcessTime: 7
+minCustomersAdded: 0, maxCustomersAdded: 4
+maxQueueLength: 20, numServicePoints: 7, closingTime: 100
+
+Stats - Fulfilled: 149, Unfulfilled: 0, Timed-out: 69, Overtime: 5, Average waiting time: 5
+
+Stats - Fulfilled: 150, Unfulfilled: 0, Timed-out: 60, Overtime: 7, Average waiting time: 5
+
+Stats - Fulfilled: 182, Unfulfilled: 0, Timed-out: 87, Overtime: 6, Average waiting time: 6
+
+Stats - Fulfilled: 154, Unfulfilled: 0, Timed-out: 70, Overtime: 5, Average waiting time: 6
+
+Stats - Fulfilled: 157, Unfulfilled: 0, Timed-out: 86, Overtime: 6, Average waiting time: 5
+
+Stats - Fulfilled: 159, Unfulfilled: 0, Timed-out: 112, Overtime: 1, Average waiting time: 5
+
+Stats - Fulfilled: 197, Unfulfilled: 0, Timed-out: 187, Overtime: 6, Average waiting time: 5
+
+Stats - Fulfilled: 153, Unfulfilled: 0, Timed-out: 59, Overtime: 1, Average waiting time: 6
+
+Stats - Fulfilled: 155, Unfulfilled: 0, Timed-out: 69, Overtime: 7, Average waiting time: 6
+
+Stats - Fulfilled: 155, Unfulfilled: 0, Timed-out: 88, Overtime: 6, Average waiting time: 5
+
+Stats - Fulfilled: 156, Unfulfilled: 0, Timed-out: 83, Overtime: 4, Average waiting time: 6
+
+Stats - Fulfilled: 180, Unfulfilled: 0, Timed-out: 177, Overtime: 4, Average waiting time: 5
+
+Stats - Fulfilled: 152, Unfulfilled: 0, Timed-out: 91, Overtime: 5, Average waiting time: 5
+
+Stats - Fulfilled: 150, Unfulfilled: 0, Timed-out: 121, Overtime: 5, Average waiting time: 5
+
+Stats - Fulfilled: 185, Unfulfilled: 0, Timed-out: 136, Overtime: 6, Average waiting time: 5
+
+Stats - Fulfilled: 154, Unfulfilled: 0, Timed-out: 113, Overtime: 4, Average waiting time: 5
+
+Stats - Fulfilled: 166, Unfulfilled: 0, Timed-out: 154, Overtime: 6, Average waiting time: 5
+
+Stats - Fulfilled: 156, Unfulfilled: 0, Timed-out: 118, Overtime: 5, Average waiting time: 5
+
+Stats - Fulfilled: 159, Unfulfilled: 5, Timed-out: 61, Overtime: 5, Average waiting time: 6
+
+Stats - Fulfilled: 130, Unfulfilled: 0, Timed-out: 54, Overtime: 4, Average waiting time: 5
+
+Averages -  fulfilled: 159, Average unfulfilled: 0, Average timed-out: 99

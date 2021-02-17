@@ -1,0 +1,12 @@
+# Standard Parameters:
+maxQueueLength      20 
+numServicePoints    7 
+closingTime         100 
+
+# Customer Parameters:
+maxWaitingTime      9
+minWaitingTime      0
+maxProcessTime      7
+minProcessTime      3
+maxCustomersAdded   4
+minCustomersAdded   0
