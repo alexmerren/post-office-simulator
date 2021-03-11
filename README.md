@@ -1,6 +1,6 @@
 # Post Office Simulator
 
-This application was written as a solution to the coursework for the ECM2433 module.
+This application was written as a solution to the coursework for the ECM2433 module. It achieved an __84/100__.
 
 ## Contents
 
